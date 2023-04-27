@@ -205,6 +205,11 @@
 /* modal */
 .authen-form{
     width: 500px;
+    background-color: var(--white-color);
+    border-radius: 0.5rem;
+}
+.authen-form__form{
+    margin-bottom: 16px;
 }
 .authen-form__container{
     margin: 0 32px;
@@ -213,6 +218,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 12px;
+    margin-top: 10px;
 }
 .authen-form__heading{
     font-size: 2.2rem;
@@ -238,5 +245,69 @@
 }
 .authen-form__input:focus{
     border-color: #888;
+}
+.authen-form__aside{
+    margin-top: 18px;
+}
+.authen-form__policy-text{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-align: center;
+    padding: 0 12px;
+}
+.authen-form__text-link{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+.authen-form__control{
+    margin-top: 80px;
+    display: flex;
+    justify-content: flex-end;
+}
+.authen-form__control--back{
+    margin-right: 8px;
+}
+.authen-form__social{
+    display: flex;
+    background-color: #F5F5F5;
+    padding: 16px 36px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 22px;
+}
+.authen-form__social-title{
+    padding: 0 36px;
+}
+.authen-form__social-icon{
+    font-size: 2rem;
+}
+.btn--icon-facebook{
+    background-color: #3a5a98;
+    color: var(--white-color);
+}
+.btn--icon-google{
+    background-color: var(--white-color);
+    color: #666;
+    margin-left: 8px;  
+}
+
+.authen-form__help{
+    display: flex;
+    justify-content: flex-end;
+}
+.authen-form__help-link{
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #999;
+}
+.authen-form__help-separate{
+    display: block;
+    height: 22px;
+    border: 1px solid var(--border-color);
+    margin: -2px 16px 0;
+}
+.authen-form__help-forget{
+    color: var(--primary-color);
+    font-weight: 500;
 }
 /* modal */
