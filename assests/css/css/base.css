@@ -4,6 +4,10 @@
     --text-color: #333;
     --primary-color: #f54d2d;
     --border-color: #dbdbdb;
+
+    --header-height: 120px;
+    --navbar-height: 34px;
+    --header-with-search-height: calc((--header-height) - var(--navbar-height));
 }
 
 *{
@@ -77,7 +81,7 @@ html{
 /* animation */
 /* button style */
 .btn{
-    min-width: 142px;
+    min-width: 124px;
     height: 34px;
     font-size: 1.5rem;
     border-radius: 2px; 
