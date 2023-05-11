@@ -32,6 +32,18 @@ html{
 .grid__row{
     display: flex;
     flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+.grid__column-2{
+    width: 16.6667%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.grid__column-10{
+    width: 83.3333%;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 /* modal */
 .modal{
@@ -90,7 +102,7 @@ html{
     padding: 12px;
     outline: none;
     color: var(--text-color);
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     line-height: 0;
