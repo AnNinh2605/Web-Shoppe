@@ -9,13 +9,15 @@
     <link rel="stylesheet" href="./assests/css/font/css/all.css">
     <link rel="stylesheet" href="./assests/css/css/base.css">
     <link rel="stylesheet" href="./assests/css/css/main.css">
+    <link rel="stylesheet" href="./assests/css/css/grid.css">
+    <link rel="stylesheet" href="./assests/css/css/responsive.css">
     <title>Document</title>
 </head>
 <body>
     <div class="app">
         <header class="header">
-            <div class="grid">
-                <nav class="header__navbar">
+            <div class="grid wide">
+                <nav class="header__navbar hide-on-mobile-tablet">
                     <ul class="header__navbar-list">
                         <li class="header__navbar-item header__navbar-item--appear header__navbar-item--separate">Vào của hàng trên ứng dụng F8-Shop
                             <div class="header__QR">
@@ -106,7 +108,10 @@
                 </nav>
 
                 <div class="header-with-search">
-                    <div class="header__logo">
+                    <label for="mobile-search-checkbox" class="header__mobile-search">
+                        <i class="header__mobile-search-icon fas fa-search"></i>
+                    </label>  
+                    <div class="header__logo hide-on-tablet">
                         <a href="/" class="header__logo-link">
                             <svg viewBox="0 0 192 65" class="header__logo-img">
                             <g fill-rule="evenodd">
@@ -115,7 +120,7 @@
                             </svg>
                         </a>
                     </div>
-                    <div class="header__search">
+                    <div class="header__search hide-on-mobile">
                         <div class="header__search-input-wrap">
                             <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm sản phẩm">
                             <div class="header__search-history">
@@ -220,6 +225,20 @@
                     </div>
                 </div>
             </div>
+            <ul class="header__sort-bar">
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Liên quan</a>
+                </li>
+                <li class="header__sort-item header__sort-item--active">
+                    <a href="" class="header__sort-link">Mới nhất</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Bán chạy</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Giá</a>
+                </li>
+            </ul>
             <!-- modal -->
             <!-- Register -->
             <!-- <div class="modal">
@@ -315,7 +334,7 @@
             <!-- modal -->
         </header>
         <div class="app__container"> 
-            <div class="grid">
+            <div class="grid wide">
                 <div class="grid__row app__content">
                     <div class="grid__column-2">
                         <nav class="category">
@@ -351,7 +370,7 @@
                         </nav>
                     </div>
                     <div class="grid__column-10">
-                        <div class="home__filter">
+                        <div class="home__filter hide-on-mobile-tablet">
                             <span class="home__filter-label">Sắp xếp theo</span>
                             <button class="home__filter-btn btn">Phổ biến</button>
                             <button class="home__filter-btn btn btn--primary">Mới nhất</button>
@@ -790,7 +809,7 @@
             </div>       
         </div>
         <footer class="footer">
-            <div class="grid">
+            <div class="grid wide">
                 <div class="grid__row">
                     <div class="grid__column-2-4">
                         <h3 class="footer__heading">Chăm sóc khách hàng</h3>
@@ -870,7 +889,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <div class="grid">
+                <div class="grid wide">
                     <p class="footer-text">© 2023 - Bản quyền thuộc về Công ty TNHH F8</p>
                 </div>
             </div>
