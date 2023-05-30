@@ -120,7 +120,10 @@
                             </svg>
                         </a>
                     </div>
-                    <div class="header__search hide-on-mobile">
+
+                    <input type="checkbox" hidden id="mobile-search-checkbox" class="header__search-checkbox">
+
+                    <div class="header__search">
                         <div class="header__search-input-wrap">
                             <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm sản phẩm">
                             <div class="header__search-history">
@@ -335,8 +338,8 @@
         </header>
         <div class="app__container"> 
             <div class="grid wide">
-                <div class="grid__row app__content">
-                    <div class="grid__column-2">
+                <div class="row sm-gutter app__content">
+                    <div class="col l-2 m-0 c-0">
                         <nav class="category">
                             <h3 class="category__heading">
                                 Danh mục
@@ -369,7 +372,7 @@
                             </ul>
                         </nav>
                     </div>
-                    <div class="grid__column-10">
+                    <div class="col l-10 m-12 c-12">
                         <div class="home__filter hide-on-mobile-tablet">
                             <span class="home__filter-label">Sắp xếp theo</span>
                             <button class="home__filter-btn btn">Phổ biến</button>
@@ -403,8 +406,8 @@
                             </div>
                         </div>
                         <div class="home__product">
-                            <div class="grid__row">
-                                <div class="grid__column-2-4">
+                            <div class="row sm-gutter">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home__product-item" href="">
                                         <div class="home__product-item-img" style="background-image: url(https://down-vn.img.susercontent.com/file/63d0cd2eed0b5713d425ec6cf020eb29);">
                                             <h4 class="home__product-item-name">Chuột Không Dây Logitech M220 Silent Không Ồn Pin 1.5 năm, Chuột Logitech USB Wireless cho Laptop (tặng bàn di chuột)</h4>
@@ -441,7 +444,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home__product-item" href="">
                                         <div class="home__product-item-img" style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lg1p48wev6yff3);">
                                             <h4 class="home__product-item-name">Chuột Không Dây Logiteche M220 Silent Tiếng Động Siêu Nhỏ</h4>
@@ -478,7 +481,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home__product-item" href="">
                                         <div class="home__product-item-img" style="background-image: url(https://down-vn.img.susercontent.com/file/238afb2d478cc78f91485add3bf7afb0)">
                                             <h4 class="home__product-item-name">Chuột Gaming Wavecom VM01 Black - White Siêu Bền ( Hàng Chính Hãng )</h4>
@@ -515,7 +518,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home__product-item" href="">
                                         <div class="home__product-item-img" style="background-image: url(https://down-vn.img.susercontent.com/file/sg-11134201-23010-7l3j6mwsdumv6e);">
                                             <h4 class="home__product-item-name">Chuột Không Dây Logitech B175 - USB 2.4Ghz, Nhỏ Gọn, Pin Trâu, Phù Hợp PC/Laptop - Bảo Hành 36 Tháng</h4>
@@ -552,7 +555,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home__product-item" href="">
                                         <div class="home__product-item-img" style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134201-23030-zor5878egsovc8);">
                                             <h4 class="home__product-item-name">Chuột Không Dây Pin Sạc Maxcotech Inphic PM6 Chống Ồn Kết Nối Bluetooth 5.0 và Wireless 2.4G Pin 5 Tuần</h4>
@@ -589,7 +592,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home__product-item" href="">
                                         <div class="home__product-item-img" style="background-image: url(https://down-vn.img.susercontent.com/file/64d0a80d60192db2267febb126dbad0e);">
                                             <h4 class="home__product-item-name">Chuột Gaming White Siêu Bền-Chuột Chơi Game Có Dây 1200 Dpi Kèm Đèn Led Nền</h4>
@@ -626,7 +629,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home__product-item" href="">
                                         <div class="home__product-item-img" style="background-image: url(https://down-vn.img.susercontent.com/file/047891d81fb0710d8d8e7e03db8e1a01);">
                                             <h4 class="home__product-item-name">Chuột game Logitech G102 - (Led đổi màu)- HÀNG CÔNG TY độ nhạy thiết kế cho game đỉnh, kiểu dáng trẻ trung năng động</h4>
@@ -663,7 +666,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home__product-item" href="">
                                         <div class="home__product-item-img" style="background-image: url(https://down-vn.img.susercontent.com/file/e1836b0cad25f53c04b3ee14d8c03861);">
                                             <h4 class="home__product-item-name">Chuột Máy Tính Chơi Game G5 6D LED 7 Màu Đẹp, DPI Khủng 3200, Chơi Game Làm Việc Văn Phòng Cực Tiện Dụng - Bảo Hành 1T</h4>
@@ -700,7 +703,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home__product-item" href="">
                                         <div class="home__product-item-img" style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lgiwbn5xrwmvbe);">
                                             <h4 class="home__product-item-name">Chuột máy tính có dây văn phòng gaming SIDOTECH P20 giá rẻ Silent tắt âm chống ồn DPI 1200 chơi game cho laptop</h4>
@@ -737,7 +740,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home__product-item" href="">
                                         <div class="home__product-item-img" style="background-image: url(https://down-vn.img.susercontent.com/file/ee16962a0937b7313c75e818d9af8f1a);">
                                             <h4 class="home__product-item-name">Chuột Gaming Không Dây T28 Dành Cho Game Thủ Chống Ồn Có Đèn LED Chơi Game Cực Đã Bảo Hành 12 Tháng</h4>
@@ -810,8 +813,8 @@
         </div>
         <footer class="footer">
             <div class="grid wide">
-                <div class="grid__row">
-                    <div class="grid__column-2-4">
+                <div class="row">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">Chăm sóc khách hàng</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -821,7 +824,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">Giới thiệu</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -835,7 +838,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">Danh mục</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -849,7 +852,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">Theo dõi</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -872,7 +875,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">Vào cửa hàng trên ứng dụng</h3>
                         <div class="footer__download">
                             <img src="/assests/css/Image/QR%20code.png" alt="Download QR" class="footer__download-QR">
