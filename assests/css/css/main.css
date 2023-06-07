@@ -26,7 +26,7 @@
 }
 .header__navbar-item-link,
 .header__navbar-item{
-    display: inline-block;
+    display: flex;
     font-size: 1.3rem;
     color: var(--white-color);
     font-weight: 300;
@@ -398,6 +398,7 @@
 }
 .header__mobile-search{
     padding: 0 12px;
+    display: none;
 }
 
 .header__mobile-search-icon{
@@ -413,7 +414,7 @@
 .header__logo-link{
     text-decoration: none;
     color: transparent;
-    display: bl;
+    display: block;
 }
 .header__search{
     background-color: var(--white-color);
@@ -490,6 +491,7 @@
     display: inline-block;
     padding: 0 12px;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 .header__cart-icon{
     font-size: 2.4rem;
@@ -597,6 +599,7 @@
     margin: 0;
     line-height: 2rem;
     max-height: 4rem;
+    max-width: 230px;
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -830,6 +833,53 @@
     color: var(--primary-color);
     right: -4px;
 }
+
+/* Mobile category */
+.mobile-category{
+    display: none;
+}
+.mobile-category-list{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    max-width: 100%;
+    overflow-x: auto;
+}
+.mobile-category-item{
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+.mobile-category-item:nth-child(3n + 1 ) .mobile-category-link{
+    background-color: #87aFd8;
+}
+.mobile-category-item:nth-child(3n + 2 ) .mobile-category-link{
+    background-color: #76C9BD;
+}
+.mobile-category-item:nth-child(3n + 3 ) .mobile-category-link{
+    background-color: #88Cf81;
+}
+.mobile-category-link{
+    --line-height: 2rem;
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 1.4rem;
+    line-height: var(--line-height);
+    text-align: center;
+    height: calc(var(--line-height) * 2);
+    width: 110px;
+    display: block;  
+    border-radius: 4px;
+    font-weight: 300;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    padding: 0 6px;
+}
+
 /* home */
 .home__filter{
     background-color: rgba(0,0,0,0.1);
